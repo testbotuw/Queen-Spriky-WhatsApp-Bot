@@ -33,7 +33,7 @@ const { handlePromote, handleDemote } = require('./Plugins/promoteDemote');
 const handleSoundCloudDownload = require('./Plugins/soundCloudDownload');
 const handleTwitterDownload = require('./Plugins/twitterDownload');
 const handleGoogleDriveDownload = require('./Plugins/googleDriveDownload');
-const handley2mate = require('./Plugins/ytDownload');
+//const handley2mate = require('./Plugins/ytDownload');
 
 let botStartTime = Date.now();
 
@@ -146,7 +146,7 @@ async function startBot() {
                     await handleMediafireCommand(sock, message);
                     await handleTikTokCommand(sock, message);
                     await handleInstagramDownloadCommand(message, sock);
-                    await handley2mate(message, sock);
+                    //await handley2mate(message, sock);
 
                 } catch (error) {
                     console.error('Error processing message:', error);
